@@ -1,0 +1,18 @@
+<resources>
+    <dimen name="dimen_one">8dp</dimen>
+    <dimen name="dimen_two">16dp</dimen>
+    <dimen name="dimen_three">24dp</dimen>
+
+    <dimen name="text_small">12sp</dimen>
+    <dimen name="text_normal">14sp</dimen>
+    <dimen name="text_larger">34sp</dimen>
+    <dimen name="text_app_bar">20sp</dimen>
+    <dimen name="title_small">16sp</dimen>
+    <dimen name="title_larger">24sp</dimen>
+
+
+    <dimen name="column_normal">56dp</dimen>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+</resources>

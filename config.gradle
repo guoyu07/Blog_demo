@@ -1,0 +1,44 @@
+/*
+ * Copyright (C) 2015 Veaer <veaer.king@gmail.com>
+ *
+ * This file is part of Gank
+ *
+ * Gank is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * Gank is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with Gank.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
+ext {
+
+    android = [
+            compileSdkVersion: 23,
+            buildToolsVersion: "23.0.2",
+            applicationId    : "com.veaer.blog",
+            minSdkVersion    : 16,
+            targetSdkVersion : 22,
+            versionCode      : 1,
+            versionName      : "1.0.1"
+    ]
+    dependencies = [
+            "appcompat-v7"     : "com.android.support:appcompat-v7:23.1.1",
+            "design"           : "com.android.support:design:23.1.1",
+            "butterknife"      : "com.jakewharton:butterknife:7.0.1",
+            "recyclerview-v7"  : "com.android.support:recyclerview-v7:23.1.1",
+            "okhttp"           : "com.squareup.okhttp:okhttp:2.3.0",
+            "retrofit"         : "com.squareup.retrofit:retrofit:1.9.0",
+            "rxandroid"        : "io.reactivex:rxandroid:1.0.1",
+            "umeng-analytics"  : "com.umeng.analytics:analytics:latest.integration",
+            "glide"            : "com.github.bumptech.glide:glide:3.6.1",
+            "picasso"             : "com.squareup.picasso:picasso:2.5.2",
+            "photoview"           : "com.github.chrisbanes.photoview:library:1.2.3"
+    ]
+}
