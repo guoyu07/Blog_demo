@@ -49,6 +49,12 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    allprojects {
+        repositories {
+            maven { url "https://jitpack.io" }
+        }
+    }
 }
 
 dependencies {
@@ -56,4 +62,5 @@ dependencies {
     compile rootProject.ext.dependencies['appcompat-v7']
     compile rootProject.ext.dependencies['design']
     compile rootProject.ext.dependencies['butterknife']
+    compile rootProject.ext.dependencies['glass']
 }

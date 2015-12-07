@@ -27,6 +27,18 @@
             android:name=".mvp.activity.LoginActivity"
             android:label="@string/app_name">
         </activity>
+        <activity
+            android:name=".glass.FirstActivity"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name=".glass.SecondActivity"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name=".glass.ThirdActivity"
+            android:label="@string/app_name">
+        </activity>
     </application>
 
 </manifest>

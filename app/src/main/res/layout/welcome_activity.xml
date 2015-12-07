@@ -13,4 +13,15 @@
         android:text="@string/welcome_mvp"
         android:textSize="@dimen/text_normal"
         android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/glass"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/column_normal"
+        android:layout_marginTop="@dimen/dimen_two"
+        android:background="@color/indigo"
+        android:textColor="@color/white"
+        android:text="@string/welcome_glass"
+        android:textSize="@dimen/text_normal"
+        android:gravity="center"/>
 </LinearLayout>

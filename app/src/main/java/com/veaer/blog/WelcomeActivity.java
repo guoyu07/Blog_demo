@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import com.veaer.blog.glass.FirstActivity;
 import com.veaer.blog.mvp.activity.LoginActivity;
 
 import butterknife.ButterKnife;
@@ -23,6 +24,11 @@ public class WelcomeActivity extends AppCompatActivity {
     @OnClick(R.id.mvp)
     public void toMvp(View v) {
         LoginActivity.onAction(this);
+    }
+
+    @OnClick(R.id.glass)
+    public void toGlass(View v) {
+        FirstActivity.onAction(this);
     }
 }
 
