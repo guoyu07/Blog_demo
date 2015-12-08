@@ -39,6 +39,10 @@
             android:name=".glass.ThirdActivity"
             android:label="@string/app_name">
         </activity>
+        <activity
+            android:name=".vary.ViewActivity"
+            android:label="@string/app_name">
+        </activity>
     </application>
 
 </manifest>

@@ -24,4 +24,16 @@
         android:text="@string/welcome_glass"
         android:textSize="@dimen/text_normal"
         android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/vary"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/column_normal"
+        android:layout_marginTop="@dimen/dimen_two"
+        android:background="@color/indigo"
+        android:textColor="@color/white"
+        android:text="@string/welcome_vary"
+        android:textSize="@dimen/text_normal"
+        android:gravity="center"/>
+
 </LinearLayout>

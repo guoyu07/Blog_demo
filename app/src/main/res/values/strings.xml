@@ -4,6 +4,7 @@
     <!-- Strings related to welcome-->
     <string name="welcome_mvp">mvp</string>
     <string name="welcome_glass">glass</string>
+    <string name="welcome_vary">vary</string>
 
     <!-- Strings related to login -->
     <string name="login_name">Name</string>

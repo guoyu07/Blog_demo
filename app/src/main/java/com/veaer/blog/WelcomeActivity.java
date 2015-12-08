@@ -6,6 +6,7 @@ import android.view.View;
 
 import com.veaer.blog.glass.FirstActivity;
 import com.veaer.blog.mvp.activity.LoginActivity;
+import com.veaer.blog.vary.ViewActivity;
 
 import butterknife.ButterKnife;
 import butterknife.OnClick;
@@ -29,6 +30,11 @@ public class WelcomeActivity extends AppCompatActivity {
     @OnClick(R.id.glass)
     public void toGlass(View v) {
         FirstActivity.onAction(this);
+    }
+
+    @OnClick(R.id.vary)
+    public void toVary(View v) {
+        ViewActivity.onAction(this);
     }
 }
 
