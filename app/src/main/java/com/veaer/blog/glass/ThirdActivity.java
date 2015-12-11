@@ -9,6 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 import com.veaer.blog.Blog;
 import com.veaer.blog.R;
 import com.veaer.glass.Glass;
+import com.veaer.glass.viewpager.PagerTrigger;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -32,10 +33,17 @@ public class ThirdActivity extends AppCompatActivity {
         viewPager.setAdapter(adapter);
         tabLayout.setupWithViewPager(viewPager);
         mGlass = Glass.Builder.newInstance()
-                .statusBarWithLower(getWindow(), Blog.mContext)
+                .statusBar(getWindow())
                 .background(tabLayout)
-                .setViewPager(viewPager, adapter)
+                .addTrigger(PagerTrigger.addTrigger(viewPager, adapter))
                 .build();
         mGlass.setColor(Color.RED);
+        Blog.refWatcher.watch(mGlass);
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        mGlass.onDestroy();
     }
 }

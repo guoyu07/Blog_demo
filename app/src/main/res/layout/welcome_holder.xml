@@ -1,0 +1,12 @@
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/wel_holder_text"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/column_normal"
+    android:background="@color/indigo"
+    android:textSize="@dimen/text_normal"
+    android:textColor="@color/white"
+    android:gravity="center"
+    android:layout_marginTop="@dimen/dimen_one"
+    android:layout_marginBottom="@dimen/dimen_one"
+    tools:text="hey"/>

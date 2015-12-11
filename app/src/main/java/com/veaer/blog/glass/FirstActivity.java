@@ -67,7 +67,7 @@ public class FirstActivity extends AppCompatActivity {
             mGlass.setColor(color);
         });
         mGlass = Glass.Builder.newInstance()
-                .statusBarWithLower(getWindow(), Blog.mContext)
+                .statusBar(getWindow())
                 .text(textView)
                 .defaultColor(Color.RED)
                 .background(appBar)

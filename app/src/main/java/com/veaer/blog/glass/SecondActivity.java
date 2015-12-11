@@ -7,7 +7,6 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.ImageView;
 
-import com.veaer.blog.Blog;
 import com.veaer.blog.R;
 import com.veaer.glass.Glass;
 
@@ -48,7 +47,7 @@ public class SecondActivity extends AppCompatActivity {
                 changeImage();
             });
         mGlass = Glass.Builder.newInstance()
-                .statusBarWithLower(getWindow(), Blog.mContext)
+                .statusBar(getWindow())
                 .background(appBar)
                 .build();
         changeImage();
@@ -56,7 +55,7 @@ public class SecondActivity extends AppCompatActivity {
 
     public void changeImage() {
         imageView.setImageResource(label);
-        mGlass.setPaletteBmp(BitmapFactory.decodeResource(getResources(), label), Glass.paletteType.MUTED);
+        mGlass.setPaletteBmp(BitmapFactory.decodeResource(getResources(), label));
     }
 
 }

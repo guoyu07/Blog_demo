@@ -17,4 +17,7 @@
     <string name="to_second">点我去第二个Activity</string>
     <string name="to_third">点我去第三个Activity</string>
 
+    <!-- String related to net status-->
+    <string name="change_net">切换网络试试</string>
+
 </resources>
