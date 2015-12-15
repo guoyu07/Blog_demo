@@ -82,6 +82,5 @@ public class VaryViewController {
             return view.getContext();
         }
 
-
     }
 }

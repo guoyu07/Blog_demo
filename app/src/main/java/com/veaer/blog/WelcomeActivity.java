@@ -3,19 +3,20 @@ package com.veaer.blog;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.SparseArray;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.veaer.blog.base.BaseActivity;
+import com.veaer.blog.base.BaseViewHolder;
 import com.veaer.blog.glass.FirstActivity;
 import com.veaer.blog.mvp.activity.LoginActivity;
 import com.veaer.blog.netstatus.NetStatusActivity;
 import com.veaer.blog.vary.ViewActivity;
 
 import butterknife.Bind;
-import butterknife.ButterKnife;
 
 
 public class WelcomeActivity extends BaseActivity {
@@ -37,6 +38,7 @@ public class WelcomeActivity extends BaseActivity {
 
     public class WelAdapter extends RecyclerView.Adapter<WelHolder> {
         private LayoutInflater mLayoutInflater;
+        private SparseArray<View> viewList;
 
         public WelAdapter() {
             super();
@@ -59,16 +61,17 @@ public class WelcomeActivity extends BaseActivity {
         }
     }
 
-    public class WelHolder extends RecyclerView.ViewHolder {
+    public class WelHolder extends BaseViewHolder {
 
-        @Bind(R.id.wel_holder_text)
         TextView holderText;
-        private View view;
 
         public WelHolder(View view) {
             super(view);
-            ButterKnife.bind(this, view);
-            this.view = view;
+        }
+
+        @Override
+        protected void onCreateView() {
+            holderText = mHolderHelper.getTextView(R.id.wel_holder_text);
         }
 
         public void bindData(int pos) {
@@ -95,7 +98,7 @@ public class WelcomeActivity extends BaseActivity {
                     toClass = LoginActivity.class;
                     btnText = "mvp";
             }
-            view.setOnClickListener(v -> readyGo(toClass));
+            itemView.setOnClickListener(v -> readyGo(toClass));
             holderText.setText(btnText);
         }
     }

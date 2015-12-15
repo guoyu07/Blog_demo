@@ -2,9 +2,11 @@ package com.veaer.blog.base;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageInfo;
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 
 import butterknife.ButterKnife;
 
@@ -138,5 +140,19 @@ public class BaseActivity extends AppCompatActivity {
     protected void showToast(String msg) {
         if(null == msg) { return; }
         Snackbar.make(getWindow().getDecorView(), msg, Snackbar.LENGTH_SHORT).show();
+    }
+
+    /**
+     * get app version
+     * */
+    public String getVersionName() {
+        String version = "1.1.0";
+        try {
+            PackageInfo packInfo = mContext.getPackageManager().getPackageInfo(mContext.getPackageName(), 0);
+            version = packInfo.versionName;
+        } catch (Exception e) {
+            Log.d("getVersionName", e.getMessage());
+        }
+        return version;
     }
 }
