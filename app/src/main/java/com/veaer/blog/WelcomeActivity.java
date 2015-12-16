@@ -63,15 +63,11 @@ public class WelcomeActivity extends BaseActivity {
 
     public class WelHolder extends BaseViewHolder {
 
+        @Bind(R.id.wel_holder_text)
         TextView holderText;
 
         public WelHolder(View view) {
             super(view);
-        }
-
-        @Override
-        protected void onCreateView() {
-            holderText = mHolderHelper.getTextView(R.id.wel_holder_text);
         }
 
         public void bindData(int pos) {
